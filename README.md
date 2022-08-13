@@ -1,7 +1,11 @@
 # michael-j-ward.github.io
 Testing Github Pages
 
+## Running locally with nix
 
-## TODO:
-- [ ] (IN PROGRESS) rename to `michael-j-ward.github.io` and see if github pages still activates automatically
-- [ ] what kind of filesystem routing does github support?
+(There is probably some github pages specific configuration to include if we wanted to get very specific)
+
+```shell
+nix shell -p jekyll
+jekyll serve
+```
