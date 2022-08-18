@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Take this Survey</h1>
+  <p id="description">Help us understand you better</p>
+  <form id="survey-form">
+    <label id="name-label">
+      Name: <input id="name" name="name" type="text" placeholder="Your Name" required />
+    </label>
+    <label id="email-label">
+    Email: <input id="email" name="email" type="email" placeholder="you@example.com"required />
+    </label>
+    <label id="number-label">
+      Number: <input id="number" type="number" min="0" max="10" placeholder="between 0 and 10" />
+    </label>
+
+    <label>
+      Baseball Team:
+      <select id="dropdown">
+        <option>White Sox</option>
+        <option>Cubs</option>
+      </select>
+    </label>
+    <label>
+      <input id="beer" name="drink" type="radio" value="beer"/>
+      Beer
+    </label>
+    <label>
+      <input id="bourbon" name="drink" type="radio" value="bourbon"/>
+      Bourbon
+    </label>
+
+<fieldset>
+    <legend>Choose your monster's features:</legend>
+
+    <div>
+      <input type="checkbox" id="scales" name="scales" value="scales"
+             checked>
+      <label for="scales">Scales</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns" value="horns">
+      <label for="horns">Horns</label>
+    </div>
+</fieldset>
+
+    <textarea placeholder="Comments?"></textarea>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
